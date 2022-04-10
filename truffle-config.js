@@ -1,5 +1,5 @@
-require('babel-register');
-require('babel-polyfill');
+//require('babel-register');
+//require('babel-polyfill');
 
 module.exports = {
   networks: {
@@ -13,6 +13,7 @@ module.exports = {
   contracts_build_directory: './src/abis/',
   compilers: {
     solc: {
+      version: "^0.8.0",
       optimizer: {
         enabled: true,
         runs: 200
